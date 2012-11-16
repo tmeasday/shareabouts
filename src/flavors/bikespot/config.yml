@@ -77,7 +77,7 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: Add a Place
+  add_button_label: Add a Spot
   action_text: added
   title: Tell us more...
   action_text: created
