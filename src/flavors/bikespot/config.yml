@@ -95,7 +95,7 @@ place:
     - prompt: Location Type
       type: select
       options:
-        - Landmark
+        - Attraction
         - Park
         - School
       name: location_type
