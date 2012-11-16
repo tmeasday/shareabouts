@@ -21,11 +21,11 @@ map:
   geolocation_onload: true
   options:
     center:
-      lat: 37.484992
-      lng: 144.574831
+      lat: 39.9523524
+      lng: -75.1636075
     zoom: 14
     minZoom: 10
-    maxZoom: 30
+    maxZoom: 17
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-streets/{z}/{x}/{y}.png
     attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
