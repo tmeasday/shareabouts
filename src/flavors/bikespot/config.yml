@@ -151,7 +151,7 @@ pages:
     url: /static/pages/overview.html
     start_page: true
 
-  - title: "Why Shareabouts?"
+  - title: "Why CrowdSpot?"
     slug: why
     url: /static/pages/why.html
 
@@ -159,6 +159,6 @@ pages:
     slug: features
     url: /static/pages/features.html
 
-  - title: OpenPlans
+  - title: CrowdSpot
     external: true
-    url: http://www.openplans.org
+    url: http://www.crowdspot.com.au
