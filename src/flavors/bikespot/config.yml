@@ -9,9 +9,9 @@ dataset_api_key: YWY1YjMyNzU5YjRiZDljOTQwMGM0Nzhm
 # Settings for the app
 app:
   # HTML Title
-  title: CrowdSpot
+  title: SLF Eco-City Map
   # Header name
-  name: CrowdSpot
+  name: SLF Eco-City Map
   # Meta description that will show up in Google search results
   meta_description: CrowdSpot is a mapping tool to gather crowd sourced public input. Use it to collect suggested locations and comments in a social, engaging process.
 
@@ -37,10 +37,10 @@ place_types:
   Attraction:
     default: blue
     focused: red
-  Park:
+  Feature:
     default: blue
     focused: red
-  School:
+  Event:
     default: blue
     focused: red
 
@@ -96,8 +96,8 @@ place:
       type: select
       options:
         - Attraction
-        - Park
-        - School
+        - Feature
+        - Event
       name: location_type
     - prompt: Your Name
       type: text
