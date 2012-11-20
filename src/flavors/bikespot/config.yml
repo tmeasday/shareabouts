@@ -84,15 +84,15 @@ place:
   anonymous_name: Someone
   submit_button_label: Submit
   items:
-    - prompt: Location Name
+    - prompt: Spot Name
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: Location Name
+          value: Spot Name
         - key: size
           value: 30
-    - prompt: Location Type
+    - prompt: Spot Type
       type: select
       options:
         - Attraction
