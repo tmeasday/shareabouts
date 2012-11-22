@@ -111,10 +111,18 @@ place:
     - prompt: Your Name or Organisation Name
       type: text
       name: submitter_name
-      optional: false
       attrs:
         - key: placeholder
           value: Type name here
+        - key: size
+          value: 30
+    - prompt: Spot Link
+      type: text
+      name: submitter_name
+      optional: true
+      attrs:
+        - key: placeholder
+          value: Type web link here
         - key: size
           value: 30
     - prompt: Description
