@@ -99,10 +99,19 @@ place:
         - Building
         - Event
       name: location_type
+    - prompt: Spot Address
+      type: text
+      name: submitter_name
+      optional: false
+      attrs:
+        - key: placeholder
+          value: Type address here
+        - key: size
+          value: 30
     - prompt: Your Name or Organisation Name
       type: text
       name: submitter_name
-      optional: true
+      optional: false
       attrs:
         - key: placeholder
           value: Type name here
