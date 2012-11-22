@@ -43,12 +43,6 @@ place_types:
   Event:
     default: blue
     focused: red
-  Retail:
-    default: blue
-    focused: red
-  Transport:
-    default: blue
-    focused: red
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
@@ -104,8 +98,6 @@ place:
         - Art
         - Building
         - Event
-	- Retail
-	- Transport
       name: location_type
     - prompt: Your Name
       type: text
