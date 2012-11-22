@@ -109,7 +109,7 @@ place:
       name: location_type
     - prompt: Spot Address
       type: text
-      name: submitter_name
+      name: address
       optional: false
       attrs:
         - key: placeholder
@@ -126,7 +126,7 @@ place:
           value: 30
     - prompt: Spot Link
       type: text
-      name: submitter_name
+      name: link
       optional: true
       attrs:
         - key: placeholder
