@@ -99,13 +99,13 @@ place:
         - Building
         - Event
       name: location_type
-    - prompt: Your Name
+    - prompt: Your Name or Organisation Name
       type: text
       name: submitter_name
       optional: true
       attrs:
         - key: placeholder
-          value: Name
+          value: Type name here
         - key: size
           value: 30
     - prompt: Description
