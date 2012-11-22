@@ -37,10 +37,10 @@ place_types:
   Art:
     default: blue
     focused: red
-  Buildings:
+  Building:
     default: blue
     focused: red
-  Events:
+  Event:
     default: blue
     focused: red
   Retail:
@@ -102,7 +102,7 @@ place:
       type: select
       options:
         - Art
-        - Buildings
+        - Building
         - Event
 	- Retail
 	- Transport
