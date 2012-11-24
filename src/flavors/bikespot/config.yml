@@ -63,8 +63,8 @@ place_type_icons:
       width: 42
       height: 85
     iconAnchor:
-      x: 41
-      y: 41
+      x: 42
+      y: 42
   red:
     iconUrl: /static/css/images/master-pin-red.png
     shadowUrl: /static/css/images/master-pin-shadow.png
@@ -75,8 +75,8 @@ place_type_icons:
       width: 42
       height: 85
     iconAnchor:
-      x: 41
-      y: 41
+      x: 42
+      y: 42
 
 
 activity:
