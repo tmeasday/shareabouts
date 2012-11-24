@@ -75,8 +75,8 @@ place_type_icons:
       width: 42
       height: 85
     iconAnchor:
-      x: 12
-      y: 41
+      x: 9
+      y: 9
 
 
 activity:
