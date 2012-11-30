@@ -109,7 +109,7 @@ place:
         - Cafe
         - Event
         - Retail
-        - Transport
+        - Route
       name: location_type
     - prompt: Spot Address
       type: text
