@@ -245,3 +245,9 @@ ul.recent-points {
 
 @media only screen and (min-width: 1300px) {
 }
+
+
+/** HIDE THE FEEDBACK TAB **/
+#zenbox_tab {
+  display: none !important;
+}
