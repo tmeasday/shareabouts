@@ -38,8 +38,8 @@ place_types:
     default: blue
     focused: red
   Cafe:
-    default: blue
-    focused: red
+    default: Green
+    focused: Green
   Event:
     default: blue
     focused: red
@@ -67,6 +67,18 @@ place_type_icons:
       y: 42
   red:
     iconUrl: /static/css/images/master-pin-red.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  Green:
+    iconUrl: /static/css/images/master-pin-green.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
