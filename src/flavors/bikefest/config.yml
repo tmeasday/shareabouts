@@ -35,26 +35,26 @@ map:
 # The values map the place type to map icons (defined below).
 place_types:
   Art:
-    default: blue
+    default: red
     focused: red
   Cafe:
-    default: Green
-    focused: Green
+    default: green
+    focused: green
   Event:
     default: blue
-    focused: red
+    focused: blue
   Retail:
-    default: blue
-    focused: red
+    default: pink
+    focused: pink
   Route:
-    default: blue
-    focused: red
+    default: aqua
+    focused: aqua
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
   blue:
-    iconUrl: /static/css/images/master-pin-red.png
+    iconUrl: /static/css/images/master-pin-blue.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -77,8 +77,32 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
-  Green:
+  green:
     iconUrl: /static/css/images/master-pin-green.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  pink:
+    iconUrl: /static/css/images/master-pin-pink.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  aqua:
+    iconUrl: /static/css/images/master-pin-aqua.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
