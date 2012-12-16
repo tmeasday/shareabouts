@@ -37,7 +37,7 @@ place_types:
   Art:
     default: red
     focused: red
-  Cafe:
+  Building:
     default: green
     focused: green
   Event:
@@ -46,7 +46,7 @@ place_types:
   Retail:
     default: pink
     focused: pink
-  Route:
+  Transport:
     default: aqua
     focused: aqua
 
@@ -142,10 +142,10 @@ place:
       type: select
       options:
         - Art
-        - Cafe
+        - Building
         - Event
         - Retail
-        - Route
+        - Transport
       name: location_type
     - prompt: Spot Address
       type: text
