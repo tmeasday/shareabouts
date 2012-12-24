@@ -34,19 +34,19 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
-  Cafe:
+  Coffee Spot:
     default: red
     focused: red
-  Park:
+  Resting Spot:
     default: green
     focused: green
-  Pub:
+  Scenic Spot:
     default: blue
     focused: blue
-  Shop:
+  Shopping Spot:
     default: pink
     focused: pink
-  Short Cut:
+  Random Spot:
     default: aqua
     focused: aqua
 
@@ -141,11 +141,11 @@ place:
     - prompt: Spot Type
       type: select
       options:
-        - Cafe
-        - Park
-        - Pub
-        - Shop
-        - Short Cut
+        - Coffee Spot
+        - Resting Spot
+        - Scenic Spot
+        - Shopping Spot
+        - Random Spot
       name: location_type
     - prompt: Spot Address
       type: text
