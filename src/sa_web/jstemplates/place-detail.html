@@ -26,7 +26,7 @@
           {{# items }}
           <div class="place-item place-item-{{ name }}">
             <span class="place-label place-label-{{ name }}">{{ label }}</span>
-            <p class="place-value place-value-{{ name }}">{{ value }}</p>
+            <p class="place-value place-value-{{ name }}">{{ #autolink }}{{ value }}{{ /autolink }}</p>
           </div>
           {{/ items }}
         </section>
