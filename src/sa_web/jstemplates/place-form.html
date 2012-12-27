@@ -13,10 +13,10 @@
             <p>
               <label for="place-{{ name }}">{{ prompt }} {{# optional }}(optional){{/ optional }}</label>
               {{#is_input}}
-              <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
+              <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}} {{^optional}}required="true"{{/optional}}>
               {{/is_input}}
               {{#is_textarea}}
-              <textarea id="place-{{ name }}" name="{{ name }}"{{#attrs}} {{ key }}="{{ value }}"{{/attrs}}></textarea>
+              <textarea id="place-{{ name }}" name="{{ name }}"{{#attrs}} {{ key }}="{{ value }}"{{/attrs}} {{^optional}}required="true"{{/optional}}></textarea>
               {{/is_textarea}}
               {{#is_select}}
               <select id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>
