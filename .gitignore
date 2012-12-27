@@ -31,3 +31,6 @@ src/project/config.yml
 
 # sqlite database
 *.db
+
+# dotcloud connected app
+.dotcloud/config
