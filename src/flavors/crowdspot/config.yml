@@ -114,34 +114,7 @@ place:
         - Wifi Spot
         - Bike Share Spot
         - Public Toilet
-
       name: location_type
-    - prompt: Spot Address
-      type: text
-      name: address
-      optional: false
-      attrs:
-        - key: placeholder
-          value: Type address here
-        - key: size
-          value: 30
-    - prompt: Your Name or Organisation Name
-      type: text
-      name: submitter_name
-      attrs:
-        - key: placeholder
-          value: Type name here
-        - key: size
-          value: 30
-    - prompt: Spot Link
-      type: text
-      name: link
-      optional: true
-      attrs:
-        - key: placeholder
-          value: Type web link here
-        - key: size
-          value: 30
     - prompt: Description
       type: textarea
       name: description
