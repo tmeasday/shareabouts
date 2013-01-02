@@ -36,6 +36,8 @@ a:hover {
 -------------------------------------------------------------- */
 
 #site-header {
+  height: auto;
+  
   background: #eeeeef;
   color: #555;
   border-top: #ff1609 3px solid;
@@ -44,7 +46,7 @@ a:hover {
           box-shadow: none;
   
   background-image: url("images/hr.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;   	
 }
 
@@ -62,21 +64,27 @@ a:hover {
  * (not in the #site-title itself) using the em unit,
  * as to not break it scaling via media queries. */
 
+
+/* If not using bg-size contain, the heights are 52, 65, 78 */
 #site-title {
-  font-family: inherit;
-  font-weight: 200;
+  background: url('images/crowdspot-logo-horizontal-487x78.png') no-repeat
+center;
+  background-size: contain;
+  width: 256px;
+  text-indent: -133337px;
 }
 
-#site-title a:link,
-#site-title a:visited {
-  color: rgb(119, 119, 119);
-  text-shadow: none;
-}
 
-#site-title a:hover {
-  color: rgb(119, 119, 119);
+@media only screen and (min-width: 1024px) { /* ticker is visible */
+  #site-title {
+    width: 406px;
+  }
 }
-
+@media only screen and (min-width: 1300px) {
+  #site-title {
+    width: 487px;
+  }
+}
 
 /* =Mobile Navigation Button
 -------------------------------------------------------------- */
@@ -84,14 +92,25 @@ a:hover {
 /* NOTE: Override the Mobile Navigation Button with caution.
  * The Helvetica stack produces a good icon. */
 
+a#nav-bttn {
+  background: #ededed;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.1);
+  
+  margin-top: 0.2em;
+  padding-bottom: 6px;
+}
+
 a#nav-bttn:link,
 a#nav-bttn:visited {
+  background: #ededed;
 /*  color: #bf00bf;*/
 /*  background: #ffbfff;*/
 /*  font-family: "Helvetica Neue", Arial, Helvetica, serif;*/
 }
 
 a#nav-bttn:hover {
+  background: #ededed;
 /*  color: #ffbfff;*/
 /*  background: #fff;*/
 }
@@ -101,7 +120,8 @@ a#nav-bttn:hover {
 -------------------------------------------------------------- */
 
 #access {
-  margin-top: 15px;
+  background: transparent;
+  border: none;
 }
 
 #access li {
@@ -120,11 +140,11 @@ a#nav-bttn:hover {
 }
 
 #access a:visited, #access a:active, #access a:link {
-  color: rgb(85, 85, 85);
+  color: rgb(119, 119, 119);
 }
 
 #access a:hover {
-  color: rgb(85, 85, 85);
+  color: rgb(30, 30, 30);
   text-decoration: none;
   box-shadow: none;
   background: none;
@@ -139,12 +159,21 @@ a#nav-bttn:hover {
   margin-bottom: 2px;
 }*/
 
+#access ul ul {
+  background: #eeeeef;
+}
+
+#access ul ul a {
+  background: #eeeeef;
+}
+
 
 /* =The Big Button to Add A New Point
 -------------------------------------------------------------- */
 
 a.add-place {
   background-color: #ff1609;
+  border-radius: 5px;
 /*  color: #eee;*/
 /*  text-shadow: none;*/
 }
@@ -195,6 +224,8 @@ textarea {
 }
 
 .bttn {
+  background-color: #ff1609;
+  border-radius: 5px;
 /*  color: #eee;*/
 /*  background-color: #ff40ff;*/
 /*  text-shadow: none;*/
@@ -261,6 +292,27 @@ ul.recent-points {
   color: rgb(85, 85, 85);
 }
 
+#powered-by {
+  background: transparent;
+  color: rgb(119, 119, 119);
+}
+
+#powered-by a {
+  font-family: inherit;
+  font-weight: 200;
+  color: rgba(0,0,0,0);
+  
+  background: url('images/crowdspot-logo-horizontal-487x78.png') no-repeat
+center 5px;
+  background-size: contain;
+  width: 256px;
+}
+
+#powered-by a:hover {
+  color: rgba(0,0,0,0);
+}
+
+
 
 /* =Media Queries
 -------------------------------------------------------------- */
@@ -284,6 +336,16 @@ ul.recent-points {
   display: none !important;
 }
 
+/* Custom Pages
+-------------------------------------------------------------- */
+
+#about .legend img {
+  float: left;
+}
+
+#about .legend {
+  font-size: 16px;
+}
 /* =Individual Pages
 -------------------------------------------------------------- */
 
