@@ -65,7 +65,7 @@ a:hover {
  * as to not break it scaling via media queries. */
 
 
-/* if width is not a problem, 52px high */
+/* If not using bg-size contain, the heights are 52, 65, 78 */
 #site-title {
   background: url('images/crowdspot-logo-horizontal-487x78.png') no-repeat
 center;
@@ -312,6 +312,16 @@ ul.recent-points {
   display: none !important;
 }
 
+/* Custom Pages
+-------------------------------------------------------------- */
+
+#about .legend img {
+  float: left;
+}
+
+#about .legend {
+  font-size: 16px;
+}
 /* =Individual Pages
 -------------------------------------------------------------- */
 
