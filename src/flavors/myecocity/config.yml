@@ -34,19 +34,19 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
-  Art:
+  Project Spot:
     default: red
     focused: red
-  Building:
+  Building Spot:
     default: green
     focused: green
-  Event:
+  Transport Spot:
     default: blue
     focused: blue
-  Retail:
+  Shopping Spot:
     default: pink
     focused: pink
-  Transport:
+  Group/Organisation Spot:
     default: aqua
     focused: aqua
 
@@ -141,11 +141,11 @@ place:
     - prompt: Spot Type
       type: select
       options:
-        - Art
-        - Building
-        - Event
-        - Retail
-        - Transport
+        - Project Spot
+        - Building Spot
+        - Transport Spot
+        - Shopping Spot
+        - Group/Organisation Spot
       name: location_type
     - prompt: Spot Address
       type: text
