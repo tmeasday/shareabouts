@@ -34,19 +34,13 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
-  Art:
+ Bike Share Spot:
     default: blue
     focused: red
-  Cafe:
+  Wifi Spot:
     default: blue
     focused: red
-  Event:
-    default: blue
-    focused: red
-  Retail:
-    default: blue
-    focused: red
-  Route:
+  Public Toilet:
     default: blue
     focused: red
 
@@ -105,11 +99,10 @@ place:
     - prompt: Spot Type
       type: select
       options:
-        - Art
-        - Cafe
-        - Event
-        - Retail
-        - Route
+        - Bike Share Spot
+        - Wifi Spot
+        - Public Toilet
+
       name: location_type
     - prompt: Spot Address
       type: text
