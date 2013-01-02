@@ -34,20 +34,20 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
+  Wifi Spot:
+    default: red
+    focused: red
   Bike Share Spot:
     default: blue
-    focused: red
-  Wifi Spot:
-    default: blue
-    focused: red
+    focused: blue
   Public Toilet:
-    default: blue
-    focused: red
+    default: green
+    focused: green
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
-  blue:
+  red:
     iconUrl: /static/css/images/master-pin-red.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
@@ -59,8 +59,20 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
-  red:
-    iconUrl: /static/css/images/master-pin-red.png
+  blue:
+    iconUrl: /static/css/images/master-pin-blue.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  green:
+    iconUrl: /static/css/images/master-pin-green.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -99,8 +111,8 @@ place:
     - prompt: Spot Type
       type: select
       options:
-        - Bike Share Spot
         - Wifi Spot
+        - Bike Share Spot
         - Public Toilet
 
       name: location_type
