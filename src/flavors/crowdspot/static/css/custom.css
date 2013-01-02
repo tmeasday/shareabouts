@@ -86,14 +86,25 @@ a:hover {
 /* NOTE: Override the Mobile Navigation Button with caution.
  * The Helvetica stack produces a good icon. */
 
+a#nav-bttn {
+  background: #ededed;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.1);
+  
+  margin-top: 0.2em;
+  padding-bottom: 6px;
+}
+
 a#nav-bttn:link,
 a#nav-bttn:visited {
+  background: #ededed;
 /*  color: #bf00bf;*/
 /*  background: #ffbfff;*/
 /*  font-family: "Helvetica Neue", Arial, Helvetica, serif;*/
 }
 
 a#nav-bttn:hover {
+  background: #ededed;
 /*  color: #ffbfff;*/
 /*  background: #fff;*/
 }
