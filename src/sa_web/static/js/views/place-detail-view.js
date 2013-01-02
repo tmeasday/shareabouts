@@ -36,7 +36,7 @@ var Shareabouts = Shareabouts || {};
                 // we want to call render to make sure things are escaped,
                 // but we need to ensure forward slashes aren't escaped
                 // so that autoLink works properly
-                return render(text).replace(new RegExp('&#x2F;', 'g'), '/').autoLink();
+                return render(text).replace(new RegExp('&#x2F;', 'g'), '/').autoLink({target: '_blank', rel: 'nofollow'});
               }
             }
           }, this.model.toJSON());
