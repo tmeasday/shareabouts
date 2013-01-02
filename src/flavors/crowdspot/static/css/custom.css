@@ -138,7 +138,7 @@ a#nav-bttn:hover {
 }
 
 #access a:hover {
-  color: rgb(85, 85, 85);
+  color: rgb(30, 30, 30);
   text-decoration: none;
   box-shadow: none;
   background: none;
@@ -152,6 +152,14 @@ a#nav-bttn:hover {
   background: url("images/nav-pin.png") center no-repeat transparent;
   margin-bottom: 2px;
 }*/
+
+#access ul ul {
+  background: #eeeeef;
+}
+
+#access ul ul a {
+  background: #eeeeef;
+}
 
 
 /* =The Big Button to Add A New Point
