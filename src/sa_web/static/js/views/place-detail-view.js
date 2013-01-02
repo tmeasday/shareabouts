@@ -30,7 +30,15 @@ var Shareabouts = Shareabouts || {};
                 self.options.placeConfig.pretty_datetime_format);
             },
             items: items,
-            survey_config: this.options.surveyConfig
+            survey_config: this.options.surveyConfig,
+            autolink: function() {
+              return function(text, render) {
+                // we want to call render to make sure things are escaped,
+                // but we need to ensure forward slashes aren't escaped
+                // so that autoLink works properly
+                return render(text).replace(new RegExp('&#x2F;', 'g'), '/').autoLink();
+              }
+            }
           }, this.model.toJSON());
 
       data.submitter_name = this.model.get('submitter_name') ||
