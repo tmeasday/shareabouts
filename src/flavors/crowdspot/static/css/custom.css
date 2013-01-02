@@ -64,21 +64,26 @@ a:hover {
  * (not in the #site-title itself) using the em unit,
  * as to not break it scaling via media queries. */
 
+
 #site-title {
-  font-family: inherit;
-  font-weight: 200;
+  background: url('images/crowdspot-logo-horizontal-256x41.png') no-repeat center;
+  width: 256px;
+  text-indent: -133337px;
 }
 
-#site-title a:link,
-#site-title a:visited {
-  color: rgb(119, 119, 119);
-  text-shadow: none;
-}
 
-#site-title a:hover {
-  color: rgb(119, 119, 119);
+@media only screen and (min-width: 1024px) { /* ticker is visible */
+  #site-title {
+    background-image: url('images/crowdspot-logo-horizontal-406x65.png');
+    width: 406px;
+  }
 }
-
+@media only screen and (min-width: 1300px) {
+  #site-title {
+    background-image: url('images/crowdspot-logo-horizontal-487x78.png');
+    width: 487px;
+  }
+}
 
 /* =Mobile Navigation Button
 -------------------------------------------------------------- */
