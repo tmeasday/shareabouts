@@ -224,6 +224,8 @@ textarea {
 }
 
 .bttn {
+  background-color: #ff1609;
+  border-radius: 5px;
 /*  color: #eee;*/
 /*  background-color: #ff40ff;*/
 /*  text-shadow: none;*/
