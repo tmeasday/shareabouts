@@ -170,7 +170,7 @@ place:
       optional: true
       attrs:
         - key: placeholder
-          value: Type web link here
+          value: Type web link here (include http:// for hyperlink)
         - key: size
           value: 30
     - prompt: Description
