@@ -164,15 +164,15 @@ pages:
         external: true
         url: /
 
-      - title: Great Places
+      - title: Wifi Spots
         external: true
         url: /wifi spot
 
-      - title: Potential Places
+      - title: Bike Share Spots
         external: true
         url: /bike share spot
 
-      - title: Problem Places
+      - title: Public Toilets
         external: true
         url: /public toilet
 
