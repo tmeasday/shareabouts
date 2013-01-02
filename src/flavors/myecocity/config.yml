@@ -46,7 +46,7 @@ place_types:
   Shopping Spot:
     default: pink
     focused: pink
-  Group/Organisation Spot:
+  Organisation Spot:
     default: aqua
     focused: aqua
 
@@ -145,7 +145,7 @@ place:
         - Building Spot
         - Transport Spot
         - Shopping Spot
-        - Group/Organisation Spot
+        - Organisation Spot
       name: location_type
     - prompt: Spot Address
       type: text
@@ -242,9 +242,9 @@ pages:
         external: true
         url: /shopping spot
 
-      - title: Group/Organisation Spots
+      - title: Organisation Spots
         external: true
-        url: /group/orgnisation spot
+        url: /orgnisation spot
 
   - title: FAQs
     slug: faqs
