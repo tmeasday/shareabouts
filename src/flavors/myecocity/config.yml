@@ -216,12 +216,38 @@ pages:
     url: /static/pages/overview.html
     start_page: true
 
-  - title: "Why CrowdSpot?"
-    slug: why
+  - title: Spots
+    slug: spots
     url: /static/pages/why.html
 
-  - title: Features
-    slug: features
+  - title: Filter Spots
+    pages:
+      - title: All
+        external: true
+        url: /
+
+      - title: Project Spots
+        external: true
+        url: /project spot
+
+      - title: Building Spots
+        external: true
+        url: /building spot
+
+      - title: Transport Spots
+        external: true
+        url: /transport spot
+
+      - title: Shopping Spots
+        external: true
+        url: /shopping spot
+
+      - title: Group/Organisation Spots
+        external: true
+        url: /group/orgnisation spot
+
+  - title: FAQs
+    slug: faqs
     url: /static/pages/features.html
 
   - title: CrowdSpot
