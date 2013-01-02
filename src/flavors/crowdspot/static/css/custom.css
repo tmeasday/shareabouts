@@ -36,6 +36,8 @@ a:hover {
 -------------------------------------------------------------- */
 
 #site-header {
+  height: auto;
+  
   background: #eeeeef;
   color: #555;
   border-top: #ff1609 3px solid;
@@ -101,7 +103,8 @@ a#nav-bttn:hover {
 -------------------------------------------------------------- */
 
 #access {
-  margin-top: 15px;
+  background: transparent;
+  border: none;
 }
 
 #access li {
