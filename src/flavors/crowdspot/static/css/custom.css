@@ -46,7 +46,7 @@ a:hover {
           box-shadow: none;
   
   background-image: url("images/hr.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;   	
 }
 
@@ -173,6 +173,7 @@ a#nav-bttn:hover {
 
 a.add-place {
   background-color: #ff1609;
+  border-radius: 5px;
 /*  color: #eee;*/
 /*  text-shadow: none;*/
 }
@@ -288,6 +289,27 @@ ul.recent-points {
 .recent-points a:hover {
   color: rgb(85, 85, 85);
 }
+
+#powered-by {
+  background: transparent;
+  color: rgb(119, 119, 119);
+}
+
+#powered-by a {
+  font-family: inherit;
+  font-weight: 200;
+  color: rgba(0,0,0,0);
+  
+  background: url('images/crowdspot-logo-horizontal-487x78.png') no-repeat
+center 5px;
+  background-size: contain;
+  width: 256px;
+}
+
+#powered-by a:hover {
+  color: rgba(0,0,0,0);
+}
+
 
 
 /* =Media Queries
