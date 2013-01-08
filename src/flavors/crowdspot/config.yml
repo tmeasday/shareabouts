@@ -155,7 +155,7 @@ support:
 pages:
   - title: About
     slug: about
-    url: /static/pages/overview.rtfd
+    url: /static/pages/overview.html
     start_page: true
 
   - title: Filter Spots
