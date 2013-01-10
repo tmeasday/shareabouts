@@ -48,7 +48,7 @@ place_types:
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
   red:
-    iconUrl: /static/css/images/master-pin-red.png
+    iconUrl: /static/css/images/master-pin-red-wifi.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -100,6 +100,14 @@ place:
   anonymous_name: Someone
   submit_button_label: Submit
   items:
+    - prompt: Your Name
+      type: text
+      name: submitter_name
+      attrs:
+        - key: placeholder
+          value: Type name here
+        - key: size
+          value: 30
     - prompt: Spot Name
       type: text
       name: name
