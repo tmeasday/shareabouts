@@ -176,14 +176,9 @@ pages:
         external: true
         url: /public toilet
 
-
   - title: "Why CrowdSpot?"
     slug: why
     url: /static/pages/why.html
-
-  - title: Features
-    slug: features
-    url: /static/pages/features.html
 
   - title: CrowdSpot
     external: true
