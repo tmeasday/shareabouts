@@ -188,6 +188,7 @@ pages:
     slug: why
     url: /static/pages/why.html
 
-  - title: CrowdSpot
-    external: true
-    url: http://www.crowdspot.com.au
+  - title: Launch Offer
+    slug: offer
+    url: /static/pages/feautures.html
+
