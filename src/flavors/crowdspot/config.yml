@@ -108,7 +108,7 @@ place:
           value: Type name here
         - key: size
           value: 30
-    - prompt: Spot Name
+    - prompt: Name your Spot
       type: text
       name: name
       attrs:
@@ -123,6 +123,14 @@ place:
         - Bike Share Spot
         - Public Toilet
       name: location_type
+    - inputfile_label: _(Add an Image)
+      type: file
+      name: my_image
+      attrs:
+        - key: accept
+          value: image/*
+	- key: required
+	  value: required 	
     - prompt: Description
       type: textarea
       name: description
