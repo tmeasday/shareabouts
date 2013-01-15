@@ -108,7 +108,7 @@ place:
           value: Type name here
         - key: size
           value: 30
-    - prompt: Spot Name
+    - prompt: Name Your Spot
       type: text
       name: name
       attrs:
