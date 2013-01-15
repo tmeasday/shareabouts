@@ -36,13 +36,13 @@ map:
 place_types:
   Wifi Spot:
     default: red
-    focused: red
+    focused: focused
   Bike Share Spot:
     default: blue
-    focused: blue
+    focused: focused
   Public Toilet:
     default: green
-    focused: green
+    focused: focused
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
@@ -83,7 +83,18 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
-
+  focused:
+    iconUrl: /static/css/images/marker-focused-yellow.png
+    shadowUrl: /static/css/images/marker-shadow.png
+    iconSize:
+      width: 25
+      height: 41
+    shadowSize:
+      width: 41
+      height: 41
+    iconAnchor:
+      x: 12
+      y: 41
 
 activity:
   # Optional. Activity is supported by default. Set to false to disable.
