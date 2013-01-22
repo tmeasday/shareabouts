@@ -35,26 +35,38 @@ map:
 # The values map the place type to map icons (defined below).
 place_types:
   Project Spot:
-    default: red
+    default: orange
     focused: red
   Building Spot:
     default: green
-    focused: green
+    focused: red
   Transport Spot:
     default: blue
-    focused: blue
+    focused: red
   Shopping Spot:
     default: pink
-    focused: pink
+    focused: red
   Organisation Spot:
     default: aqua
-    focused: aqua
+    focused: red
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
   blue:
     iconUrl: /static/css/images/master-pin-blue.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  orange:
+    iconUrl: /static/css/images/master-pin-orange.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
