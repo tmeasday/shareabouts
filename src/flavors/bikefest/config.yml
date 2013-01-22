@@ -9,9 +9,9 @@ dataset_api_key: YWY1YjMyNzU5YjRiZDljOTQwMGM0Nzhm
 # Settings for the app
 app:
   # HTML Title
-  title: Bike Friendly Spots
+  title: Bikefest
   # Header name
-  name: Bike Friendly Spots 
+  name: Bikefest 
   # Meta description that will show up in Google search results
   meta_description: CrowdSpot is a mapping tool to gather crowd sourced public input. Use it to collect suggested locations and comments in a social, engaging process.
 
@@ -34,21 +34,18 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
-  Coffee Spot:
-    default: red
+  Sweet Spot:
+    default: orange
     focused: red
-  Resting Spot:
-    default: green
-    focused: green
-  Scenic Spot:
+  Hot Spot:
     default: blue
-    focused: blue
-  Shopping Spot:
+    focused: red
+  Beauty Spot:
     default: pink
-    focused: pink
-  Random Spot:
-    default: aqua
-    focused: aqua
+    focused: red
+  Shop Spot:
+    default: green
+    focused: red
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
@@ -65,8 +62,20 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
+  orange:
+    iconUrl: /static/css/images/master-pin-orange.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
   red:
-    iconUrl: /static/css/images/master-pin-red.png
+    iconUrl: /static/css/images/master-pin-orange.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -150,11 +159,10 @@ place:
     - prompt: Spot Type
       type: select
       options:
-        - Coffee Spot
-        - Resting Spot
-        - Scenic Spot
-        - Shopping Spot
-        - Random Spot
+        - Sweet Spot
+        - Hot Spot
+        - Beauty Spot
+        - Shop Spot
       name: location_type
     - prompt: Spot Address
       type: text
@@ -225,12 +233,34 @@ pages:
     url: /static/pages/overview.html
     start_page: true
 
-  - title: "Why CrowdSpot?"
+  - title: The Spots
     slug: why
     url: /static/pages/why.html
 
-  - title: Features
-    slug: features
+  - title: Filter Spots    
+    pages:
+      - title: All
+        external: true
+        url: /
+
+      - title: Sweet Spots
+        external: true
+        url: /sweet spot
+
+      - title: Hot Spots
+        external: true
+        url: /hot spot
+
+      - title: Beauty Spots
+        external: true
+        url: /beauty toilet
+
+      - title: Shop Spots
+        external: true
+        url: /shop spot
+ 
+  - title: FAQs
+    slug: faqs
     url: /static/pages/features.html
 
   - title: CrowdSpot
