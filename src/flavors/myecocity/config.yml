@@ -228,7 +228,7 @@ pages:
     url: /static/pages/overview.html
     start_page: true
 
-  - title: Spots
+  - title: The Spots
     slug: spots
     url: /static/pages/why.html
 
