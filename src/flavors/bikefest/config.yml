@@ -148,7 +148,7 @@ place:
           value: image/*
         - key: required
           value: required
-    - prompt: Name you Spot
+    - prompt: Name your Spot
       type: text
       name: name
       attrs:
@@ -197,8 +197,8 @@ survey:
 
 support:
   submission_type: support
-  submit_btn_text: Support This!
-  action_text: "supported"
+  submit_btn_text: Like This!
+  action_text: "liked"
   anonymous_name: Someone
 
 pages:
