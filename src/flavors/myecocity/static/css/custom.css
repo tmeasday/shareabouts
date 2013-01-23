@@ -353,6 +353,11 @@ center 5px;
 
 #what-are-spots img {
   float: left;
-  clear: left;
-  margin: 10px 20px 0 0;
+  margin-right: 20px;
+}
+
+#what-are-spots p {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
