@@ -350,3 +350,8 @@ center 5px;
 /* =Individual Pages
 -------------------------------------------------------------- */
 
+
+#what-are-spots img {
+  float: left;
+  margin-right: 20px;
+}
