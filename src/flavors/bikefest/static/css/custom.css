@@ -40,7 +40,7 @@ a:hover {
   
   background: #eeeeef;
   color: #555;
-  border-top: #ff1609 3px solid;
+  border-top: #3350a3 3px solid;
      -moz-box-shadow: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -66,12 +66,19 @@ a:hover {
 
 
 /* If not using bg-size contain, the heights are 52, 65, 78 */
-#site-title {
-  background: url('images/crowdspot-logo-horizontal-324x53.png') no-repeat
-center;
-  background-size: contain;
-  width: 232px;
-  text-indent: -133337px;
+#site-title a, #site-title a:link, #site-title a:visited, #site-title a:hover {
+  color: #3350a3;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 200;
+}
+
+#site-title::before {
+  content: ' ';
+  background: url("images/bikefest-logo-47x53.png");
+  width: 47px;
+  height: 53px;
+  float: left;
+  margin: 10px 20px 0 0;
 }
 
 
@@ -172,7 +179,7 @@ a#nav-bttn:hover {
 -------------------------------------------------------------- */
 
 a.add-place {
-  background-color: #ff1609;
+  background-color: #3350a3;
   border-radius: 5px;
 /*  color: #eee;*/
 /*  text-shadow: none;*/
@@ -224,7 +231,7 @@ textarea {
 }
 
 .bttn {
-  background-color: #ff1609;
+  background-color: #3350a3;
   border-radius: 5px;
 /*  color: #eee;*/
 /*  background-color: #ff40ff;*/
