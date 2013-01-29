@@ -151,6 +151,14 @@ place:
   anonymous_name: Someone
   submit_button_label: Submit
   items:
+    - prompt: Your Name
+      type: text
+      name: submitter_name
+      attrs:
+        - key: placeholder
+          value: Type name here
+        - key: size
+          value: 30
     - prompt: Add an Image
       inputfile_label: _(Add an Image)      
       type: file
