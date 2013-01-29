@@ -37,19 +37,19 @@ map:
 place_types:
   Project Spot:
     default: orange
-    focused: red
+    focused: focused
   Building Spot:
     default: green
-    focused: red
+    focused: focused
   Transport Spot:
     default: blue
-    focused: red
+    focused: focused
   Shopping Spot:
     default: pink
-    focused: red
+    focused: focused
   Organisation Spot:
     default: aqua
-    focused: red
+    focused: focused
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
@@ -126,6 +126,18 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
+  focused:
+    iconUrl: /static/css/images/marker-focused.png
+    shadowUrl: /static/css/images/marker-shadow.png
+    iconSize:
+      width: 25
+      height: 41
+    shadowSize:
+      width: 41
+      height: 41
+    iconAnchor:
+      x: 12
+      y: 41
 
 
 activity:
