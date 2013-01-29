@@ -9,11 +9,11 @@ dataset_api_key: YWY1YjMyNzU5YjRiZDljOTQwMGM0Nzhm
 # Settings for the app
 app:
   # HTML Title
-  title: My Eco-city Map
+  title: CrowdSpot demo
   # Header name
-  name: My Eco-city Map
+  name: CrowdSpot demo
   # Meta description that will show up in Google search results
-  meta_description: The 'My EcoCity Map' was created for the city and its many residents and visitors to contribute and share knowledge about all the sustainable activities taking  in Central Melbourne.
+  meta_description: CrowdSpot is a mapping tool to gather crowd sourced public input. Use it to collect suggested locations and comments in a social, engaging process.
 
 # Settings for map and layer configs
 map:
@@ -26,7 +26,6 @@ map:
     zoom: 14
     minZoom: 10
     maxZoom: 17
-    maxBounds: [ [39.786, -75.463], [40.118, -74.864] ]
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/aisey.map-u8fegfjt/{z}/{x}/{y}.png
     attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
@@ -35,51 +34,33 @@ map:
 # The keys show up in the dropdown list when you are adding a new place
 # The values map the place type to map icons (defined below).
 place_types:
-  Project Spot:
-    default: orange
-    focused: red
-  Building Spot:
-    default: green
-    focused: red
-  Transport Spot:
+  Wifi Spot:
+    default: red
+    focused: focused
+  Bike Share Spot:
     default: blue
-    focused: red
-  Shopping Spot:
-    default: pink
-    focused: red
-  Organisation Spot:
-    default: aqua
-    focused: red
+    focused: focused
+  Public Toilet:
+    default: green
+    focused: focused
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
-  blue:
-    iconUrl: /static/css/images/master-pin-blue.png
-    shadowUrl: /static/css/images/master-pin-shadow.png
-    iconSize:
-      width: 85
-      height: 41
-    shadowSize:
-      width: 42
-      height: 85
-    iconAnchor:
-      x: 42
-      y: 42
-  orange:
-    iconUrl: /static/css/images/master-pin-orange.png
-    shadowUrl: /static/css/images/master-pin-shadow.png
-    iconSize:
-      width: 85
-      height: 41
-    shadowSize:
-      width: 42
-      height: 85
-    iconAnchor:
-      x: 42
-      y: 42
   red:
-    iconUrl: /static/css/images/master-pin-red.png
+    iconUrl: /static/css/images/wifi-pin-red.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  blue:
+    iconUrl: /static/css/images/bike-pin-red.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -91,7 +72,7 @@ place_type_icons:
       x: 42
       y: 42
   green:
-    iconUrl: /static/css/images/master-pin-green.png
+    iconUrl: /static/css/images/toilet-pin-red.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -102,31 +83,18 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
-  pink:
-    iconUrl: /static/css/images/master-pin-pink.png
-    shadowUrl: /static/css/images/master-pin-shadow.png
+  focused:
+    iconUrl: /static/css/images/marker-focused.png
+    shadowUrl: /static/css/images/marker-shadow.png
     iconSize:
-      width: 85
+      width: 25
       height: 41
     shadowSize:
-      width: 42
-      height: 85
-    iconAnchor:
-      x: 42
-      y: 42
-  aqua:
-    iconUrl: /static/css/images/master-pin-aqua.png
-    shadowUrl: /static/css/images/master-pin-shadow.png
-    iconSize:
-      width: 85
+      width: 41
       height: 41
-    shadowSize:
-      width: 42
-      height: 85
     iconAnchor:
-      x: 42
-      y: 42
-
+      x: 12
+      y: 41
 
 activity:
   # Optional. Activity is supported by default. Set to false to disable.
@@ -143,7 +111,15 @@ place:
   anonymous_name: Someone
   submit_button_label: Submit
   items:
-    - prompt: Spot Name
+    - prompt: Your Name
+      type: text
+      name: submitter_name
+      attrs:
+        - key: placeholder
+          value: Type name here
+        - key: size
+          value: 30
+    - prompt: Name Your Spot
       type: text
       name: name
       attrs:
@@ -154,38 +130,10 @@ place:
     - prompt: Spot Type
       type: select
       options:
-        - Project Spot
-        - Building Spot
-        - Transport Spot
-        - Shopping Spot
-        - Organisation Spot
+        - Wifi Spot
+        - Bike Share Spot
+        - Public Toilet
       name: location_type
-    - prompt: Spot Address
-      type: text
-      name: address
-      optional: false
-      attrs:
-        - key: placeholder
-          value: Type address here
-        - key: size
-          value: 30
-    - prompt: Your Name or Organisation Name
-      type: text
-      name: submitter_name
-      attrs:
-        - key: placeholder
-          value: Type name here
-        - key: size
-          value: 30
-    - prompt: Spot Link
-      type: text
-      name: link
-      optional: true
-      attrs:
-        - key: placeholder
-          value: Type web link here (include http:// for hyperlink)
-        - key: size
-          value: 30
     - prompt: Description
       type: textarea
       name: description
@@ -229,40 +177,29 @@ pages:
     url: /static/pages/overview.html
     start_page: true
 
-  - title: The Spots
-    slug: spots
-    url: /static/pages/why.html
-
   - title: Filter Spots
     pages:
       - title: All
         external: true
         url: /
 
-      - title: Project Spots
+      - title: Wifi Spots
         external: true
-        url: /project spot
+        url: /wifi spot
 
-      - title: Building Spots
+      - title: Bike Share Spots
         external: true
-        url: /building spot
+        url: /bike share spot
 
-      - title: Transport Spots
+      - title: Public Toilets
         external: true
-        url: /transport spot
+        url: /public toilet
 
-      - title: Shopping Spots
-        external: true
-        url: /shopping spot
+  - title: "Why CrowdSpot?"
+    slug: why
+    url: /static/pages/why.html
 
-      - title: Org Spots
-        external: true
-        url: /orgnisation spot
-
-  - title: FAQs
-    slug: faqs
+  - title: "Special Launch Offer!"
+    slug: offer
     url: /static/pages/features.html
 
-  - title: CrowdSpot
-    external: true
-    url: http://www.crowdspot.com.au
