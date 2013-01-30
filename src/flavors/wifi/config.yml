@@ -9,9 +9,9 @@ dataset_api_key: YWY1YjMyNzU5YjRiZDljOTQwMGM0Nzhm
 # Settings for the app
 app:
   # HTML Title
-  title: CrowdSpot demo
+  title: WiFi public demand demo
   # Header name
-  name: CrowdSpot demo
+  name: WiFi public demand demo
   # Meta description that will show up in Google search results
   meta_description: CrowdSpot is a mapping tool to gather crowd sourced public input. Use it to collect suggested locations and comments in a social, engaging process.
 
@@ -37,42 +37,12 @@ place_types:
   Wifi Spot:
     default: red
     focused: focused
-  Bike Share Spot:
-    default: blue
-    focused: focused
-  Public Toilet:
-    default: green
-    focused: focused
 
 # Defines place icons. See http://leaflet.cloudmade.com/reference.html#icon
 # for documention of each property. Any omitted property will be undefined.
 place_type_icons:
   red:
     iconUrl: /static/css/images/wifi-pin-red.png
-    shadowUrl: /static/css/images/master-pin-shadow.png
-    iconSize:
-      width: 85
-      height: 41
-    shadowSize:
-      width: 42
-      height: 85
-    iconAnchor:
-      x: 42
-      y: 42
-  blue:
-    iconUrl: /static/css/images/bike-pin-red.png
-    shadowUrl: /static/css/images/master-pin-shadow.png
-    iconSize:
-      width: 85
-      height: 41
-    shadowSize:
-      width: 42
-      height: 85
-    iconAnchor:
-      x: 42
-      y: 42
-  green:
-    iconUrl: /static/css/images/toilet-pin-red.png
     shadowUrl: /static/css/images/master-pin-shadow.png
     iconSize:
       width: 85
@@ -127,13 +97,6 @@ place:
           value: Spot Name
         - key: size
           value: 30
-    - prompt: Spot Type
-      type: select
-      options:
-        - Wifi Spot
-        - Bike Share Spot
-        - Public Toilet
-      name: location_type
     - prompt: Description
       type: textarea
       name: description
