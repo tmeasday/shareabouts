@@ -53,6 +53,30 @@ place_type_icons:
     iconAnchor:
       x: 42
       y: 42
+  blue:
+    iconUrl: /static/css/images/bike-pin-red.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
+  green:
+    iconUrl: /static/css/images/toilet-pin-red.png
+    shadowUrl: /static/css/images/master-pin-shadow.png
+    iconSize:
+      width: 85
+      height: 41
+    shadowSize:
+      width: 42
+      height: 85
+    iconAnchor:
+      x: 42
+      y: 42
   focused:
     iconUrl: /static/css/images/marker-focused.png
     shadowUrl: /static/css/images/marker-shadow.png
@@ -74,19 +98,13 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: Add a WiFi Spot
+  add_button_label: Add a Spot
   action_text: added
   title: Tell us more...
   action_text: created
   anonymous_name: Someone
   submit_button_label: Submit
   items:
-    - prompt: Short Description
-      type: text
-      name: name
-      attrs:
-        - key: placeholder
-          value: E.g. On the corner of X and Y
     - prompt: Your Name
       type: text
       name: submitter_name
@@ -95,6 +113,11 @@ place:
           value: Type name here
         - key: size
           value: 30
+    - prompt: Spot Type
+      type: select
+      options:
+        - Wifi Spot
+      name: location_type
     - prompt: Description
       type: textarea
       name: description
