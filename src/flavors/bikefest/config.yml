@@ -151,31 +151,6 @@ place:
   anonymous_name: Someone
   submit_button_label: Submit
   items:
-      - prompt: Short Description
-      type: text
-      name: name
-      attrs:
-        - key: placeholder
-          value: Eg. On the corner of X and Y
-        - key: size
-          value: 30
-      - prompt: Spot Type
-      type: select
-      options:
-        - Sweet Spot
-        - Hot Spot
-        - Beauty Spot
-        - Shop Spot
-      - prompt: Add an Image
-      inputfile_label: _(Add an Image)      
-      type: file
-      name: my_image
-      attrs:
-        - key: accept
-          value: image/*
-        - key: required
-          value: required
-      name: location_type
     - prompt: Your Name
       type: text
       name: submitter_name
@@ -184,6 +159,31 @@ place:
           value: Type name here
         - key: size
           value: 30
+    - prompt: Add an Image
+      inputfile_label: _(Add an Image)      
+      type: file
+      name: my_image
+      attrs:
+        - key: accept
+          value: image/*
+        - key: required
+          value: required
+    - prompt: Name your Spot
+      type: text
+      name: name
+      attrs:
+        - key: placeholder
+          value: Spot Name
+        - key: size
+          value: 30
+    - prompt: Spot Type
+      type: select
+      options:
+        - Sweet Spot
+        - Hot Spot
+        - Beauty Spot
+        - Shop Spot
+      name: location_type
     - prompt: Description
       type: textarea
       name: description
