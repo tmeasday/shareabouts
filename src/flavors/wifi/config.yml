@@ -89,12 +89,12 @@ place:
           value: Type name here
         - key: size
           value: 30
-    - prompt: Name Your Spot
+    - prompt: Short Description
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: Spot Name
+          value: On the corner of X and Y
         - key: size
           value: 30
     - prompt: Spot Type
@@ -102,7 +102,7 @@ place:
       options:
         - Wifi Spot
       name: location_type
-    - prompt: Description
+    - prompt: Longer Description
       type: textarea
       name: description
       optional: true
@@ -144,24 +144,6 @@ pages:
     slug: about
     url: /static/pages/overview.html
     start_page: true
-
-  - title: Filter Spots
-    pages:
-      - title: All
-        external: true
-        url: /
-
-      - title: Wifi Spots
-        external: true
-        url: /wifi spot
-
-      - title: Bike Share Spots
-        external: true
-        url: /bike share spot
-
-      - title: Public Toilets
-        external: true
-        url: /public toilet
 
   - title: "Why CrowdSpot?"
     slug: why
