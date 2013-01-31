@@ -155,12 +155,12 @@ place:
   anonymous_name: Someone
   submit_button_label: Submit
   items:
-    - prompt: Spot Name
+    - prompt: Short Description
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: Spot Name
+          value: Eg. Greenest building in Melbourne
         - key: size
           value: 30
     - prompt: Spot Type
@@ -172,15 +172,6 @@ place:
         - Shopping Spot
         - Organisation Spot
       name: location_type
-    - prompt: Spot Address
-      type: text
-      name: address
-      optional: false
-      attrs:
-        - key: placeholder
-          value: Type address here
-        - key: size
-          value: 30
     - prompt: Your Name or Organisation Name
       type: text
       name: submitter_name
